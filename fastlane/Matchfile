@@ -1,4 +1,4 @@
-git_url("https://github.com/SaturnDan/family-recipe-ios-certificates")
+git_url("https://github.com/SaturnDan/recipe-planner-ios-certificates.git")
 git_basic_authorization("U2F0dXJuRGFuOmdocF9OSm1qNjlJMzZnS0lzT0pKMElXd0MwRkU5Sm54bDYyUThUTzQ=")
 
 storage_mode("git")
