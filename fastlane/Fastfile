@@ -75,8 +75,6 @@ platform :ios do
 
     build_app(scheme: "recipe-planner")
     upload_to_testflight(
-      distribute_external: true, 
-      groups: "Testers", 
       changelog: "New changes"
     )
     delete_temp_keychain(keychain_name)

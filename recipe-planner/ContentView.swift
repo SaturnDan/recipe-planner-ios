@@ -8,19 +8,49 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection: Tab = .plan
+    @EnvironmentObject var modelData: ModelData
+    
+    enum Tab {
+        case plan
+        case recipes
+        case shopping
+        case search
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView(selection: $selection) {
+            WeeklyPlan()
+                .tabItem {
+                    Label ("Plan", systemImage: "checklist")
+                }
+                .tag(Tab.plan)
+            
+            ShoppingList()
+                .tabItem {
+                    Label ("Groceries", systemImage: "fork.knife")
+                }
+                .tag(Tab.shopping)
+            RecipePage()
+                .tabItem {
+                    Label ("Discover", systemImage: "globe.desk")
+                }
+                .tag(Tab.recipes)
+            
+            
+            
+            SearchPage()
+                .tabItem {
+                    Label ("Search", systemImage: "magnifyingglass")
+                }
+                .tag(Tab.search)
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData())
     }
 }
