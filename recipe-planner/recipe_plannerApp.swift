@@ -21,6 +21,9 @@ struct recipe_plannerApp: App {
                         
                     }
                 }
+                .onAppear{
+                    modelData.loadWeeklyPlan()
+                }
         }
     }
 }

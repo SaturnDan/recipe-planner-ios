@@ -15,6 +15,9 @@
 		79610485298A67DC0011CEFD /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79610484298A67DC0011CEFD /* SearchPage.swift */; };
 		79610487298A67F10011CEFD /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79610486298A67F10011CEFD /* ShoppingList.swift */; };
 		7961048A298A6A860011CEFD /* DayRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79610489298A6A860011CEFD /* DayRow.swift */; };
+		7961048D298B2CAB0011CEFD /* PermanentMarker-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7961048C298B2CAB0011CEFD /* PermanentMarker-Regular.ttf */; };
+		79610491298B32180011CEFD /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79610490298B32180011CEFD /* DayModel.swift */; };
+		79610493298B326B0011CEFD /* IngredientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79610492298B326B0011CEFD /* IngredientModel.swift */; };
 		799A4E00298A1226005E325B /* recipe_plannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A4DFF298A1226005E325B /* recipe_plannerApp.swift */; };
 		799A4E02298A1226005E325B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A4E01298A1226005E325B /* ContentView.swift */; };
 		799A4E04298A1227005E325B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799A4E03298A1227005E325B /* Assets.xcassets */; };
@@ -29,6 +32,9 @@
 		79610484298A67DC0011CEFD /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
 		79610486298A67F10011CEFD /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
 		79610489298A6A860011CEFD /* DayRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRow.swift; sourceTree = "<group>"; };
+		7961048C298B2CAB0011CEFD /* PermanentMarker-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PermanentMarker-Regular.ttf"; sourceTree = "<group>"; };
+		79610490298B32180011CEFD /* DayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
+		79610492298B326B0011CEFD /* IngredientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientModel.swift; sourceTree = "<group>"; };
 		799A4DFC298A1226005E325B /* recipe-planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "recipe-planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		799A4DFF298A1226005E325B /* recipe_plannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipe_plannerApp.swift; sourceTree = "<group>"; };
 		799A4E01298A1226005E325B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,7 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				7961047C298A64190011CEFD /* ModelData.swift */,
+				79610490298B32180011CEFD /* DayModel.swift */,
 				7961047E298A64510011CEFD /* RecipeModel.swift */,
+				79610492298B326B0011CEFD /* IngredientModel.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -75,6 +83,14 @@
 				79610489298A6A860011CEFD /* DayRow.swift */,
 			);
 			path = HelperViews;
+			sourceTree = "<group>";
+		};
+		7961048B298B2C9B0011CEFD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7961048C298B2CAB0011CEFD /* PermanentMarker-Regular.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		799A4DF3298A1226005E325B = {
@@ -96,9 +112,10 @@
 		799A4DFE298A1226005E325B /* recipe-planner */ = {
 			isa = PBXGroup;
 			children = (
+				7961048B298B2C9B0011CEFD /* Fonts */,
+				79610477298A62960011CEFD /* Views */,
 				79610488298A6A550011CEFD /* HelperViews */,
 				79610478298A632E0011CEFD /* DataModel */,
-				79610477298A62960011CEFD /* Views */,
 				799A4E0D298A1FF8005E325B /* Info.plist */,
 				799A4DFF298A1226005E325B /* recipe_plannerApp.swift */,
 				799A4E01298A1226005E325B /* ContentView.swift */,
@@ -181,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				799A4E07298A1227005E325B /* Preview Assets.xcassets in Resources */,
+				7961048D298B2CAB0011CEFD /* PermanentMarker-Regular.ttf in Resources */,
 				799A4E04298A1227005E325B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +216,8 @@
 				79610483298A67D50011CEFD /* RecipePage.swift in Sources */,
 				799A4E00298A1226005E325B /* recipe_plannerApp.swift in Sources */,
 				7961048A298A6A860011CEFD /* DayRow.swift in Sources */,
+				79610493298B326B0011CEFD /* IngredientModel.swift in Sources */,
+				79610491298B32180011CEFD /* DayModel.swift in Sources */,
 				79610485298A67DC0011CEFD /* SearchPage.swift in Sources */,
 				79610481298A66B00011CEFD /* WeeklyPlan.swift in Sources */,
 				7961047D298A64190011CEFD /* ModelData.swift in Sources */,

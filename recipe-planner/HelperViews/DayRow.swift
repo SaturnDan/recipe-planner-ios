@@ -12,9 +12,27 @@ struct DayRow: View {
     
     @State var backgroundColour: Color = Color.red
     var body: some View {
-        Rectangle()
-            .background(backgroundColour)
-            .frame(width: .infinity, height: 200)
+        VStack(alignment: .leading){
+            Text(dayName)
+                .font(Font.custom("PermanentMarker-Regular", size: 50))
+                .padding(.bottom, -20)
+            Button{
+                
+            }label: {
+                ZStack{
+                    Rectangle()
+                        .foregroundColor(backgroundColour)
+                        .opacity(0.8)
+                        .frame(width: .infinity, height: 200)
+                    Image(systemName: "plus.circle")
+                        .foregroundColor(.white)
+                        .font(.system(size: 60))
+                }
+            }
+           
+            
+        }
+       
             
         
             .onAppear{
